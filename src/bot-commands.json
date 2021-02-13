@@ -1,0 +1,22 @@
+{
+    "commands":[
+      {"name":"summon", "desc":"Summon Pahie into your channel.", "args":"None"},
+      {"name":"kick", "desc":"Kick Pahie out of your channel.", "args":"None"},
+      {"name":"w2g", "desc":"Pahie sends a watch2gether room.", "args":"None"},
+      {"name":"poll", "desc":"Pahie creates a poll.", "args":{"1":"hello", "2":"world"}},
+      {"name":"skrbl", "desc":"Pahie sends link to skrbbl.io.", "args":"None"},
+      {"name":"dankmeme", "desc":"Pahie sends a random dank meme thats hot on reddit.", "args":"None"},
+      {"name":"dmc", "desc":"Pahie starts a dickmeasurement contest.", "args":"None"},
+      {"name":"godeep", "desc":"Pahie makes you think about life.", "args":"None"},
+      {"name":"joke", "desc":"Pahie tells a dadjoke.", "args":"None"},
+      {"name":"availableaudio", "desc":"Return a list of available audiofiles for Pahies Soundboard.", "args":"None"},
+      {"name":"play", "desc":"Pahie sends link to skrbbl.io.", "args":"None"},
+      {"name":"signmeup", "desc":"Enables the functionality to add your own favourite soundfiles to a personal soundboard.", "args":"None"},
+      {"name":"addfavourite", "desc":"Adds a specified soundfile under the specified keyword to your personal soundboard.", "args":"None"},
+      {"name":"showfavourites", "desc":"Returns a list of all currently favourited soundfiles and the keywords assigned to play them.", "args":"None"},
+      {"name":"deletefavourite", "desc":"Deletes the soundfile associated with the specified keyword from your favourites list.", "args":"None"},
+      {"name":"fav", "desc":"Pahie plays the soundfile that you saved under the specified keyword.", "args":"None"}
+    ]
+}
+
+
