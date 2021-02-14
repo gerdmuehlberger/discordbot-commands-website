@@ -4,13 +4,14 @@
             <h1>{{ modalheader }}</h1>
             <p id="p-desc">{{ modaldesc }}</p>
             <p id="p-args">Arguments: {{ modalargs }} </p>
+            <p id="p-example">Example: {{ modalexample }}</p>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    props: ['modalheader', 'modaldesc', 'modalargs', 'darkmode'],
+    props: ['modalheader', 'modaldesc', 'modalargs', 'modalexample', 'darkmode'],
     methods: {
         closeCommandModal(){
             this.$emit('close')
@@ -23,10 +24,10 @@ export default {
     .modal{
 
         width: 450px;
-        height: 200px;
+        height: 250px;
         padding: 10px;
         margin: 15% auto;
-        background: white;
+        background: #ffffff;
         border-radius: 10px;
     }
 
@@ -46,12 +47,17 @@ export default {
 
 
     #p-desc{
-        font-style: italic;
-    }
+        font-size: 18px;
 
+    }
 
     #p-args{
         font-weight: bold;
+    }
+
+    #p-example{
+        font-style: italic;
+        color: #99aab5;
     }
 
     .darkmode{

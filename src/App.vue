@@ -2,12 +2,12 @@
 <template>
   <h1>{{title}}</h1>
   <h3>bot prefix: "pahie"</h3>
-  <button class="modalbutton" v-for='command in commands.commands' :key="command.name" @click="sendDataToModal(command.name, command.desc, command.args); toggleCommandModal();"> 
+  <button class="modalbutton" v-for='command in commands.commands' :key="command.name" @click="sendDataToModal(command.name, command.desc, command.args, command.example); toggleCommandModal();"> 
     {{command.name}}
   </button>
 
   <teleport to=".modals" v-if="showCommandModal">
-    <Modal :modalheader="selectedCommand" :modaldesc="selectedCommandDescription" :modalargs="selectedCommandArgs" :darkmode="darkMode" @close="toggleCommandModal"></Modal>    
+    <Modal :modalheader="selectedCommand" :modaldesc="selectedCommandDescription" :modalargs="selectedCommandArgs" :modalexample="selectedCommandExample" :darkmode="darkMode" @close="toggleCommandModal"></Modal>    
   </teleport>
 
 
@@ -31,6 +31,7 @@ export default {
       selectedCommand: '',
       selectedCommandDescription:'',
       selectedCommandArgs: '',
+      selectedCommandExample: '',
       showCommandModal: false,
       darkMode: false
     }
@@ -43,10 +44,11 @@ export default {
     toggleCommandModal(){
       this.showCommandModal = !this.showCommandModal
     },
-    sendDataToModal(commandname, commanddesc, commandargs) {
+    sendDataToModal(commandname, commanddesc, commandargs, commandexample) {
       this.selectedCommand = commandname;
       this.selectedCommandDescription = commanddesc;
       this.selectedCommandArgs = commandargs;
+      this.selectedCommandExample = commandexample;
     }
   }
 }
@@ -63,7 +65,7 @@ export default {
 }
 
 h1{
-  font-size: 5em;
+  font-size: 5vw;
   margin-bottom: 0px;
   color: #ffffff;
 }
