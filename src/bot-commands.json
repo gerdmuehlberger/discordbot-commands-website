@@ -18,5 +18,3 @@
       {"name":"fav", "desc":"Pahie plays the soundfile that you saved under the specified keyword.", "args":"keyword", "example":"pahie fav krim"}
     ]
 }
-
-
