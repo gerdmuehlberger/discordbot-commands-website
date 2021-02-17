@@ -6,7 +6,7 @@
       {"name":"poll", "desc":"Pahie creates a poll.", "args":"question, polloptions*", "example":"'Is Pahie sexy?' yes no robin"},
       {"name":"skrbl", "desc":"Pahie sends link to skrbbl.io.", "args":"None", "example":"pahie skrbl"},
       {"name":"dankmeme", "desc":"Pahie sends a random dank meme.", "args":"None", "example":"pahie dankmeme"},
-      {"name":"dmc", "desc":"Pahie starts a dickmeasurement contest.", "args":"Names*", "example":"pahie dmc robin gerd pahie"},
+      {"name":"dmc", "desc":"Pahie starts a dickmeasurement contest.", "args":"names*", "example":"pahie dmc robin gerd pahie"},
       {"name":"godeep", "desc":"Pahie makes you think about life.", "args":"None", "example":"pahie godeep"},
       {"name":"joke", "desc":"Pahie tells a dadjoke.", "args":"None", "example":"pahie joke"},
       {"name":"availableaudio", "desc":"Return a list of available audiofiles for one of Pahies soundboard-categories (currently supported: atv, spongebob, smoove).", "args":"categoryname", "example":"pahie availableaudio atv"},
@@ -15,6 +15,7 @@
       {"name":"addfavourite", "desc":"Adds a specified soundfile under the specified keyword to your personal soundboard.", "args":"soundfile, keyword", "example":"pahie addfavourite nissel-krimsekt krim"},
       {"name":"showfavourites", "desc":"Returns a list of all currently favourited soundfiles and the keywords assigned to play them.", "args":"None", "example":"pahie showfavourites"},
       {"name":"deletefavourite", "desc":"Deletes the soundfile associated with the specified keyword from your favourites list.", "args":"keyword", "example":"pahie deletefavourite krim"},
-      {"name":"fav", "desc":"Pahie plays the soundfile that you saved under the specified keyword.", "args":"keyword", "example":"pahie fav krim"}
+      {"name":"fav", "desc":"Pahie plays the soundfile that you saved under the specified keyword.", "args":"keyword", "example":"pahie fav krim"},
+      {"name":"whatis", "desc":"Pahie tries to detect what is in the image you passed to the function.", "args":"[image]", "example":"pahie whatis [image] (image needs to be dragged and dropped in the chat after typing the command.)"}
     ]
 }
