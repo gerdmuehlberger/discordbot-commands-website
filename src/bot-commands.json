@@ -6,7 +6,6 @@
       {"name":"poll", "desc":"Pahie creates a poll.", "args":"question, polloptions*", "example":"'Is Pahie sexy?' yes no robin"},
       {"name":"skrbl", "desc":"Pahie sends link to skrbbl.io.", "args":"None", "example":"pahie skrbl"},
       {"name":"dankmeme", "desc":"Pahie sends a random dank meme.", "args":"None", "example":"pahie dankmeme"},
-      {"name":"dmc", "desc":"Pahie starts a dickmeasurement contest.", "args":"names*", "example":"pahie dmc robin gerd pahie"},
       {"name":"godeep", "desc":"Pahie makes you think about life.", "args":"None", "example":"pahie godeep"},
       {"name":"joke", "desc":"Pahie tells a dadjoke.", "args":"None", "example":"pahie joke"},
       {"name":"availableaudio", "desc":"Return a list of available audiofiles for one of Pahies soundboard-categories (currently supported: atv, spongebob, smoove).", "args":"categoryname", "example":"pahie availableaudio atv"},
